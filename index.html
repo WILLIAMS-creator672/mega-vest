@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MegaVest</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="dist/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div>
+
+    <div class="relative w-full h-screen overflow-hidden">
+      <!-- Background Video -->
+      <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover darken -z-10">
+        <source src="/MEGAVEST/MEDIA/sec-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <nav class="bg-transparent relative px-[5vw] py-[15px] flex items-center justify-between text-white sha">
+
+        <h1 class="text-whit text-[25px] lg:text-[40px] font-mono font-bold z-50"><span
+            class=" text-[35px] lg:text-[50px] text-lime-500">M</span>ega<span
+            class=" text-[35px] lg:text-[50px] text-lime-500">V</span>est</h1>
+
+
+
+        <ul
+          class="font-mono absolute lg:sticky -left-[300px] top-0 w-[280px] lg:w-fit flex flex-col lg:flex lg:flex-row  pt-14 lg:pt-0 h-screen lg:h-fit gap-[30px] lg:gap-[50px] text-[20px] font-bold bg-black lg:bg-transparent bg-lime-950/30 backdrop-blur-md z-30"
+          id="menu"> <span class="left-0"></span>
+          <li><a href=""
+              class="text-white block lg:flex lg:ml-0  pl-10 lg:pl-0  p-3 lg:p-0  hover:text-lime-500">Home</a>
+          </li>
+          <li><a href=""
+              class="text-white block lg:flex lg:ml-0  pl-10 lg:pl-0  p-3 lg:p-0  hover:text-lime-500">Invest</a></li>
+          <li><a href=""
+              class="text-white block lg:flex lg:ml-0  pl-10 lg:pl-0  p-3 lg:p-0  hover:text-lime-500">About</a></li>
+          <li><a href=""
+              class="text-white block lg:flex lg:ml-0  pl-10 lg:pl-0  p-3 lg:p-0  hover:text-lime-500">Contact</a></li>
+          <li><a href=""
+              class="text-white block lg:flex lg:ml-0  pl-10 lg:pl-0  p-3 lg:p-0  hover:text-lime-500">Request</a></li>
+
+          <!-- <div class="pl-10 gap-[40px] text-[30px] flex lg:hidden">
+              <a href=""><i class="fa-brands fa-whatsapp hover:scale-110 hover:text-lime-500" title="Whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-instagram hover:scale-110 hover:text-lime-500"
+                  title="Instagram"></i></a>
+              <a href=""><i class="fa-brands fa-telegram hover:scale-110 hover:text-lime-500" title="Telegram"></i></a>
+            </div> -->
+
+          <div class="border- pl-5 block gap-[30px] font-mono font-semibold  lg:hidden">
+            <button class=" border-2 p-[3px] px-2 rounded-2xl hover:bg-white hover:text-black ">Log In</button>
+            <button class="bg-lime-500 hover:bg-lime-600 p-[3px] px-2 rounded-2xl">Sign Up</button>
+          </div>
+
+
+        </ul>
+
+
+        <!-- <div class="text-lime-200 text-[30px] w-fit h-fit flex flex-col gap-[20px] invisible lg:visible"> -->
+        <!-- <a href=""><i class="fa-brands fa-whatsapp hover:scale-110 hover:text-lime-500"></i></a>
+          <a href=""><i class="fa-brands fa-instagram hover:scale-110 hover:text-lime-500"></i></a>
+          <a href=""><i class="fa-brands fa-telegram hover:scale-110 hover:text-lime-500"></i></a> -->
+
+        <!-- <details onclick="openUser()" class=" thin-border flex flex-col gap-6 p-[5px] rounded-lg hover:bg-neutral-700 ">
+              <summary class="summary flex gap-[5px]"><i class="fa-solid fa-circle-user"></i><i
+                  class="fa-solid fa-angle-down "></i></summary>
+
+              <div class="" id="user">
+                <a href="">Profile</a>
+              </div>
+            </details> -->
+
+
+        <!-- </div> -->
+
+        <div class="border- hidden gap-[30px] font-mono font-semibold  lg:flex">
+          <button class=" border-2 p-[5px] px-4 rounded-2xl hover:bg-white hover:text-black ">Log In</button>
+          <button class="bg-lime-500 hover:bg-lime-600 p-[5px] px-4 rounded-2xl">Sign Up</button>
+        </div>
+
+
+        <div class="flex lg:hidden  flex-col items-end gap-[10px] group cursor-pointer" id="hamburger"
+          onclick="mobile('rotate-90') ">
+          <span class="bar bg-white h-[3px] w-[30px] group-hover:bg-lime-500 "></span>
+          <span class="bar bg-white h-[3px] w-[20px] group-hover:bg-lime-500 "></span>
+          <span class="bar bg-white h-[3px] w-[30px] group-hover:bg-lime-500 "></span>
+        </div>
+
+
+      </nav>
+
+
+      <section class=" bg-transparent px-[5vw] pt-[50px] font-mono">
+        <div class="flex justify-between gap-[50px]">
+          <div>
+            <h1 class="text-white text-[40px] font-bold">Grow Your Wealth, <br> One Smart Move At A Time</h1>
+
+
+          </div>
+          <img src="/MEDIA/img-one.jpg" alt="" class="w-[30%] rounded-lg">
+          <div>
+
+          </div>
+        </div> <br> <br>
+
+        <div class="text-white flex justify-evenly gap-[50px]">
+          <div
+            class="bg-black border-2 flex flex-col gap-[18px] justify-between items-center font-extrabold text-center text-[23px] w-[200px] p-[30px] rounded-2xl">
+            <i class="fa-solid fa-users"></i>
+            <h1>1000+ <br> Users</h1>
+          </div>
+          <div
+            class="bg-black border-2 flex flex-col gap-[18px] justify-between items-center font-extrabold text-center text-[23px] w-[200px] p-[30px] rounded-2xl">
+            <i class="fa-solid fa-money-bill-transfer"></i>
+            <h1>Swift <br> Withdrawal</h1>
+          </div>
+          <div
+            class="bg-black border-2 flex flex-col gap-[18px] justify-between items-center font-extrabold text-center text-[23px] w-[200px] p-[30px] rounded-2xl">
+          </div>
+        </div>
+
+        <h5 class="bg-blue-700"></h5>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+      <button>
+        <i class="fa-solid fa-headset text-white text-[30px] absolute right-10 bottom-20 bg-lime-700 rounded-full scale p-3"></i>
+      </button>
+
+
+    </div>
+
+
+    <script src="script.js">
+
+    </script>
+
+</body>
+
+</html>

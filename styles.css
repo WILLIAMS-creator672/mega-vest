@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+/* HAMBURGER */
+
+.bar {
+  transition: all 0.3s;
+}
+.hamburger-active .bar:nth-child(1) {
+  transform: translateY(12px) rotate(45deg);
+}
+.hamburger-active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-active .bar:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+}
+
+/* SHADOW */
+
+.shad{
+    box-shadow: 1px 1px 1px 1px lime;
+}
+
+
+/* IMAGE DARKEN */
+
+.darken{
+ filter: brightness(30%);
+ 
+}
+
+/* SUMMARY */
+.summary {
+  list-style: none;
+  appearance: none;
+}
+
+/* BORDER */
+
+.thin-border{
+  border: 1px solid;
+}
+
+/* SCALE */
+
+.scale{
+  animation: scale 3s infinite;
+}
+
+@keyframes scale {
+  0%{transform: scale(1);}
+    50%{transform: scale(1.2);}
+  100%{transform: scale(1);}
+}
